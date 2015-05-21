@@ -1,5 +1,18 @@
 ---- Variables -----
-There are 81 variables in the tidy data set, which follow a descriptive code.
+There are 2 identifying variables in the data set:
+
+Subject - An integer from 1 to 30 identifying the person performing the acticity
+Activity - A description of the activity being measured. This variable has 6 values:
+
+walking, 
+walking upstairs,
+walking downstairs,
+sitting,
+standing, 
+laying [sic]
+
+
+There are 81 measured variables in the tidy data set, which follow a descriptive code.
 t - time domain variable
 f - frequency domain variable
 
@@ -16,10 +29,12 @@ Mag - refers to magnitude of combining three-dimensional calculations
 X,Y,Z - refer to the respective axis along which the measurement was taken
 
 mean() - the measurement is a mean of measurements
-std - the measurement is the standard deviation of measurements
+std() - the measurement is the standard deviation of measurements
 
 These are put together to form a variable name, e.g. tBodyAccX-mean() would be the time-domain body measurement from an accelerometer
 in the x-direction, averaged across the time span.
+
+The original data provided are normalized between [-1, 1], thus the data have no units.
 
 ----- Data -----
 There are 30 subjects and six activities for each subject.
